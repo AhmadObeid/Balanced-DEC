@@ -9,10 +9,10 @@ is the number of serial iterations.
 The following illustrates all possible choices:
 	*Set1 	   2 	8
 	*Set22	   2	8
-	*Pavia           35	8
-	*PaviaU        36             8
-	*Salinas       53	8
-	*SalinasA    63             8
+	*Pavia    35	8
+	*PaviaU   36    8
+	*Salinas  53	8
+	*SalinasA 63    8
 
 Note that 8 is the default number of iterations we are implementing in the code. Changing it at will 
 is easy. 
@@ -27,10 +27,10 @@ line, please make sure that the entered number is a power of 2.
 of samples will be written in the command window. The numbers of samples per dataset are:
 	*Set1 	   110,000
 	*Set2	   160,000
-	*Pavia           148,152
-    	*PaviaU        42,776
-	*Salinas       54,129
-	*SalinasA    5348
+	*Pavia     148,152
+    	*PaviaU    42,776
+	*Salinas    54,129
+	*SalinasA   5348
 	  
 *Any mistake in the command line will result in a (core dumped) error. If everything is correct, the 
 program should run successfully.

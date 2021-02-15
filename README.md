@@ -24,5 +24,5 @@ git clone https://github.com/AhmadObeid/Balanced-DEC.git
 https://drive.google.com/drive/folders/1kUI8lUQQBEpzYmbnNzhIsQIyhyeHi2tQ?usp=sharing
  
 ```
-5. Go inside /BDEC or /CUDA to findout more about the specific usages
+5. Go inside /BDEC or /search to findout more about the specific usages
 

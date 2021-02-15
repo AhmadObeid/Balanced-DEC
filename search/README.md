@@ -1,4 +1,4 @@
-# Balanced-DEC
+## The search stage
 How to run:
 1) Edit the macro in search.cu to define the value of parameter K, where you should write the number
 of classes of the wanted dataset.

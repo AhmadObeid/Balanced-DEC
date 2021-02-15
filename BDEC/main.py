@@ -16,15 +16,16 @@ if __name__ == "__main__":
     parser.add_argument('--update_interval', default=10,type=int)
     parser.add_argument('--neighborhood_size', default=950,type=int)
     parser.add_argument('--lr', default=0.01,type=int)
-    parser.add_argument('--file', default='SA',type=str)
-    parser.add_argument('--mode', default='BDEC',type=str)
-    parser.add_argument('--typ', default='predict',type=str)
+    parser.add_argument('--file', default=None,type=str)
+    parser.add_argument('--mode', default=None,type=str)
+    parser.add_argument('--typ', default=None,type=str)
 
     args = parser.parse_args()
     import os
     ensure(args.file, args.mode, args.typ)
     res_dir = 'results/'+args.mode+'/'+args.file  
-    
+    if not os.path.exists(res_dir):
+                    os.makedirs(res_dir)
     
     if args.file == 'SA':
         args.neighborhood_size = 500

@@ -17,20 +17,10 @@ git clone https://github.com/AhmadObeid/Balanced-DEC.git
 
 ```
 
-4. Download the datasets.    
+4. Download the datasets and place them in /datasets.    
 
-
-
-4. Run experiment on MNIST.   
-`python DEC.py --dataset mnist`   
-or (if there's pretrained autoencoder weights)  
-The DEC model will be saved to "results/DEC_model_final.h5".
-
-5. Other usages.   
-
-Use `python DEC.py -h` for help.
-
-## Results
-
+https://drive.google.com/drive/folders/1kUI8lUQQBEpzYmbnNzhIsQIyhyeHi2tQ?usp=sharing
+ 
 ```
-python run_exp.py
+5. Go inside /BDEC or /CUDA to findout more about the specific usages
+

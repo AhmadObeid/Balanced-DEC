@@ -10,14 +10,16 @@ Keras and CUDA implementation for GRSL paper:
 pip install keras scikit-learn   
 ```
 2. Make sure you have CUDA for the CUDA part
-```
+
 3. Clone the code to local.   
+
 ```
 git clone https://github.com/AhmadObeid/Balanced-DEC.git
 
 ```
 
 4. Download the datasets and place them in /datasets.    
+```
 
 https://drive.google.com/drive/folders/1kUI8lUQQBEpzYmbnNzhIsQIyhyeHi2tQ?usp=sharing
  

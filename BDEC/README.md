@@ -1,25 +1,33 @@
 # Balanced-DEC
 
 ## Usage
-There are 2 modes of experimentation. 
-1. Load the fully trained network, and use it in a prediction-only fashion 
-```
-python main.py <>  
-```
-2. Make sure you have CUDA for the CUDA part
+There are 2 modes of experimentation:  
+1. Load the fully trained network, and use it in a prediction-only fashion
+2. Load only the weights of the autoencoder, and go through the DEC algorithm
 
-3. Clone the code to local.   
+To run the code:
 
 ```
-git clone https://github.com/AhmadObeid/Balanced-DEC.git
-
+python main.py --file <file> --mode <mode> typ <type> 
+```
+The available files are:
+```
+* S, SA, PC, PU, pavia_small
+```
+The available modes are:
+```
+* BDEC, DEC
+```
+The available types are:
+```
+* predict, train
 ```
 
-4. Download the datasets and place them in /datasets.    
-```
+## Results
+Results will be printed in the command window, and can be seen in the results directory
 
-https://drive.google.com/drive/folders/1kUI8lUQQBEpzYmbnNzhIsQIyhyeHi2tQ?usp=sharing
- 
-```
-5. Go inside /BDEC or /search to findout more about the specific usages
+## Using your fetched representatives from /search
+
+The indices directory contains suggested indices that were used by the authors, and should give you the same results of the paper.
+To use your own indices (i.e. after finding them using the search step), copy and past them in the indices files and save.
 

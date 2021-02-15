@@ -1,10 +1,17 @@
 import numpy as np
 import pdb
+import sys
 
 def ensure(file, mode, typ):
-    assert file != None,"Please indicate the wanted file\nOptions are: S, SA, PU, PC, pavia_small"
-    assert mode != None, "Please choose the mode\nOptions are: DEC, BDEC"
-    assert typ != None, "Plase choose the excution type\nOptions are: predict, train"
+    if file != 'S' and file != 'SA' and file != 'PC' and file != 'PU' and file != 'pavia_small':
+        print("Please indicate the correct wanted file\nOptions are: S, SA, PU, PC, pavia_small")
+        sys.exit()
+    if mode != 'BDEC' and mode != 'DEC':
+        print("Please choose the correct mode\nOptions are: DEC, BDEC")
+        sys.exit()
+    if typ != 'predict' and typ != 'train':
+        print("Plase choose the correct excution type\nOptions are: predict, train")
+        sys.exit()
     
 def get_indices(dataset):
     File = open('saved/indices/'+dataset+'_indices.txt',"r")
